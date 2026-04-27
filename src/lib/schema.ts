@@ -34,14 +34,19 @@ function buildHomeConstructionBusinessSchema({
   description: string;
   areaServed: readonly string[];
 }) {
+  const sameAs = Object.values(BUSINESS.social).filter(Boolean);
+
   return {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "@id": `${SITE_URL}/#business`,
     name: BUSINESS.name,
+    alternateName: BUSINESS.shortName,
     url: SITE_URL,
     telephone: BUSINESS.phone,
     email: BUSINESS.email,
+    logo: `${SITE_URL}${BUSINESS.logoPath}`,
+    image: `${SITE_URL}${BUSINESS.primaryImagePath}`,
     address: {
       "@type": "PostalAddress",
       streetAddress: BUSINESS.address.street,
@@ -50,6 +55,7 @@ function buildHomeConstructionBusinessSchema({
       postalCode: BUSINESS.address.zip,
       addressCountry: BUSINESS.address.country,
     },
+    sameAs,
     areaServed,
     description,
     makesOffer: SCHEMA_OFFERS.map((name) => ({
@@ -178,4 +184,22 @@ export function buildServiceAreaBusinessSchema(page: ServiceAreaPageData) {
     description: page.metaDescription,
     areaServed: [`${page.city} ${page.state}`, ...SCHEMA_AREA_SERVED],
   });
+}
+
+export function buildServiceAreaWebPageSchema(page: ServiceAreaPageData) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${SITE_URL}${page.href}/#webpage`,
+    url: `${SITE_URL}${page.href}`,
+    name: `Cabinet Installation ${page.city} ${page.state} | ${BUSINESS.name}`,
+    description: page.metaDescription,
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    about: { "@id": `${SITE_URL}/#business` },
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}${page.heroImageSrc}`,
+    },
+    inLanguage: "en-US",
+  };
 }

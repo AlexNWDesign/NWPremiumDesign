@@ -6,6 +6,7 @@ import {
   buildBreadcrumbSchema,
   buildFAQSchema,
   buildServiceAreaBusinessSchema,
+  buildServiceAreaWebPageSchema,
 } from "@/lib/schema";
 import { SITE_URL } from "@/lib/constants";
 import { ServiceAreaPageTemplate } from "@/components/service-areas/ServiceAreaPageTemplate";
@@ -17,15 +18,22 @@ export function buildServiceAreaMetadata(slug: string): Metadata {
   }
 
   return buildPageMetadata({
-    title: page.titleTag,
+    title: {
+      absolute: `Cabinet Installation ${page.city} ${page.state} | NW Premium Design LLC`,
+    },
     description: page.metaDescription,
     keywords: page.keywords,
     alternates: { canonical: `${SITE_URL}${page.href}` },
     openGraph: {
-      title: page.titleTag,
+      title: `Cabinet Installation ${page.city} ${page.state} | NW Premium Design LLC`,
       description: page.metaDescription,
       url: `${SITE_URL}${page.href}`,
-      images: [{ url: page.heroImageSrc, alt: page.heroImageAlt }],
+      images: [
+        {
+          url: `${SITE_URL}${page.heroImageSrc}`,
+          alt: page.heroImageAlt,
+        },
+      ],
     },
   });
 }
@@ -44,6 +52,7 @@ export function renderServiceAreaPage(slug: string) {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify([
             buildServiceAreaBusinessSchema(page),
+            buildServiceAreaWebPageSchema(page),
             buildBreadcrumbSchema([
               { name: "Home", url: SITE_URL },
               { name: "Service Areas", url: `${SITE_URL}/service-areas` },

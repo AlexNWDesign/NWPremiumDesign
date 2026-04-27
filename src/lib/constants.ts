@@ -1,6 +1,8 @@
 export const BUSINESS = {
   name: "NW Premium Design LLC",
   shortName: "NW Premium Design",
+  logoPath: "/New Logo1.png",
+  primaryImagePath: "/og-image.jpg",
   phone: "+12538869342",
   phoneDisplay: "(253) 886-9342",
   email: "Alexpremiumdesign@gmail.com",
