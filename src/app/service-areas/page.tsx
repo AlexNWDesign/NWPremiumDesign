@@ -39,6 +39,9 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 export default function ServiceAreasPage() {
+  const primaryAreaLinks = SERVICE_AREA_LINKS.slice(0, 4);
+  const featuredAreaLinks = SERVICE_AREA_LINKS.slice(4, -1);
+
   return (
     <>
       <script
@@ -121,7 +124,7 @@ export default function ServiceAreasPage() {
                 Primary Cabinet Installation Areas
               </h2>
               <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-                {SERVICE_AREA_LINKS.slice(0, 4).map((link) => (
+                {primaryAreaLinks.map((link) => (
                   <Link
                     key={link.href}
                     href={link.href}
@@ -138,6 +141,45 @@ export default function ServiceAreasPage() {
                     <p className="mt-3 text-sm leading-relaxed text-cream/70">
                       Cabinet installation, kitchen cabinet installation, IKEA kitchen
                       installation, and finish-focused cabinet replacement work.
+                    </p>
+                    <div className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-cream">
+                      View area page
+                      <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection>
+            <div className="rounded-[28px] border border-navy/10 bg-white p-6 shadow-[0_2px_20px_rgba(15,23,42,0.05)] sm:p-8">
+              <h2 className="font-serif text-2xl font-semibold text-cream sm:text-3xl">
+                Additional Cabinet Installation Areas
+              </h2>
+              <p className="mt-4 max-w-3xl text-base leading-relaxed text-cream/70">
+                We also built dedicated cabinet installation pages for other strong
+                service areas across the Eastside and South King County so those
+                cities are not treated like thin footnotes.
+              </p>
+              <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+                {featuredAreaLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="group rounded-[24px] border border-navy/10 bg-cream-dark p-5 transition-all hover:-translate-y-1 hover:border-navy/15 hover:bg-white"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="flex size-10 items-center justify-center rounded-full bg-navy/6">
+                        <MapPin className="size-4 text-cream" />
+                      </div>
+                      <h3 className="font-serif text-xl font-semibold text-cream">
+                        {link.shortLabel}
+                      </h3>
+                    </div>
+                    <p className="mt-3 text-sm leading-relaxed text-cream/70">
+                      Cabinet installation, kitchen cabinet installation, custom
+                      cabinet installs, and finish-focused replacement work.
                     </p>
                     <div className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-cream">
                       View area page

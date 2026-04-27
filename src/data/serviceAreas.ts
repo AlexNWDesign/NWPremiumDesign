@@ -22,6 +22,46 @@ export const SERVICE_AREA_LINKS = [
     href: "/cabinet-installation-clyde-hill",
   },
   {
+    label: "Cabinet Installation in Redmond",
+    shortLabel: "Redmond",
+    href: "/cabinet-installation-redmond",
+  },
+  {
+    label: "Cabinet Installation in Issaquah",
+    shortLabel: "Issaquah",
+    href: "/cabinet-installation-issaquah",
+  },
+  {
+    label: "Cabinet Installation in Renton",
+    shortLabel: "Renton",
+    href: "/cabinet-installation-renton",
+  },
+  {
+    label: "Cabinet Installation in Kent",
+    shortLabel: "Kent",
+    href: "/cabinet-installation-kent",
+  },
+  {
+    label: "Cabinet Installation in Auburn",
+    shortLabel: "Auburn",
+    href: "/cabinet-installation-auburn",
+  },
+  {
+    label: "Cabinet Installation in Federal Way",
+    shortLabel: "Federal Way",
+    href: "/cabinet-installation-federal-way",
+  },
+  {
+    label: "Cabinet Installation in Mercer Island",
+    shortLabel: "Mercer Island",
+    href: "/cabinet-installation-mercer-island",
+  },
+  {
+    label: "Cabinet Installation in Medina",
+    shortLabel: "Medina",
+    href: "/cabinet-installation-medina",
+  },
+  {
     label: "Other Service Areas",
     shortLabel: "Service Areas",
     href: "/service-areas",
@@ -451,6 +491,799 @@ export const serviceAreaPages: ServiceAreaPageData[] = [
       "luxury cabinet installation Clyde Hill",
     ],
   },
+  {
+    slug: "cabinet-installation-redmond",
+    href: "/cabinet-installation-redmond",
+    city: "Redmond",
+    state: "WA",
+    titleTag: "Cabinet Installation Redmond WA | IKEA & Custom Cabinet Installer",
+    metaDescription:
+      "NW Premium Design LLC provides cabinet installation in Redmond, WA, including kitchen cabinet installation, IKEA kitchen systems, custom cabinetry, cabinet replacement, built-ins, and kitchen remodel finish work.",
+    heading: "Cabinet Installation in Redmond, WA",
+    intro: [
+      "NW Premium Design LLC provides cabinet installation in Redmond, WA for homeowners looking for a clean, modern finish in kitchens, built-ins, bathroom vanities, and cabinet replacement projects. Alex focuses on straight lines, balanced reveals, and the finish carpentry details that make cabinet work feel deliberate instead of pieced together.",
+      "Whether your Redmond project involves IKEA kitchen installation, custom cabinet installation, or replacing an older kitchen during a remodel, the goal is the same: deliver a cabinet installation Redmond homeowners can feel confident showing off.",
+    ],
+    heroImageSrc: "/images/yelp/yelp-140.jpg",
+    heroImageAlt: "Redmond kitchen cabinet installation by NW Premium Design",
+    nearbyAreasTitle: "Areas We Serve Near Redmond",
+    nearbyAreas: [
+      "Education Hill",
+      "Downtown Redmond",
+      "Bear Creek",
+      "Overlake",
+      "Union Hill",
+      "Grass Lawn",
+      "North Redmond",
+      "Southeast Redmond",
+    ],
+    sections: [
+      {
+        title: "Redmond Kitchen Cabinet Installation",
+        paragraphs: [
+          "Redmond kitchens often combine contemporary layouts with a need for careful cabinet alignment, integrated appliance planning, and trim work that looks crisp once counters and lighting are in. NW Premium Design LLC handles kitchen cabinet installation Redmond homeowners need when the final look matters as much as the install itself.",
+          "That includes new kitchen layouts, cabinet replacement, and remodel-driven cabinet projects where the cabinetry anchors the whole room.",
+        ],
+      },
+      {
+        title: "IKEA, Frameless & Custom Cabinet Systems",
+        paragraphs: [
+          "Alex installs IKEA kitchen systems, European frameless cabinets, and custom cabinetry in Redmond homes. That means clean leveling, hardware placement, panels, fillers, crown, and detail work that helps modular or custom systems look finished and intentional.",
+          "For homeowners searching IKEA kitchen installation Redmond or custom cabinet installation Redmond, NW Premium Design LLC is built around the install quality that keeps those systems looking premium over time.",
+        ],
+      },
+      {
+        title: "Cabinet Replacement, Built-Ins & Finish Details",
+        paragraphs: [
+          "Cabinet replacement Redmond projects often need more than hanging new boxes. They need trim transitions, touch-up carpentry, toe kicks, side panels, built-in storage, vanity cabinet installation, and a steady finish hand that keeps the remodel looking cohesive.",
+        ],
+      },
+    ],
+    whyChoose: [
+      "Strong fit for Redmond kitchens with modern layouts and finish-sensitive cabinet work.",
+      "Experienced with IKEA kitchen installation, frameless cabinet systems, and custom cabinets.",
+      "Clear communication around plans, measurements, photos, and remodel sequencing.",
+      "Built-ins, cabinet replacement, and finish carpentry can all be handled under one scope.",
+    ],
+    recentWorkTitle: "Recent Cabinet Installation Work",
+    recentWorkBody:
+      "Recent work relevant to Redmond includes modern kitchen cabinet installs, frameless layouts, built-in details, and custom cabinet replacement projects with clean finish carpentry.",
+    recentWorkImages: [
+      {
+        src: "/images/yelp/yelp-140.jpg",
+        alt: "Redmond kitchen cabinet installation with accent lighting by NW Premium Design",
+        caption: "Modern kitchen cabinet installation with integrated lighting and refined finish work.",
+      },
+      {
+        src: "/images/yelp/yelp-120.jpg",
+        alt: "Redmond European frameless cabinet installation by NW Premium Design",
+        caption: "Frameless cabinet installation with a clean, contemporary appliance wall layout.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do you install IKEA kitchen cabinets in Redmond?",
+        answer: "Yes. NW Premium Design LLC handles IKEA kitchen installation in Redmond, including assembly, leveling, trim, panels, and the detail work that helps the finished kitchen look built-in.",
+      },
+      {
+        question: "Do you install custom cabinets?",
+        answer: "Yes. Alex installs custom cabinetry, frameless cabinet systems, and semi-custom lines for Redmond kitchens, built-ins, vanity cabinets, and cabinet replacement projects.",
+      },
+      {
+        question: "Can you install cabinets I already purchased?",
+        answer: "Yes. If you already ordered cabinets, NW Premium Design LLC can take over the installation and finish work needed to complete the project properly.",
+      },
+      {
+        question: "Do you handle cabinet replacement during a remodel?",
+        answer: "Yes. Cabinet replacement is a common part of Redmond remodels, especially when homeowners want clean transitions and finish carpentry after the cabinet install is complete.",
+      },
+      {
+        question: "How do I get an estimate?",
+        answer: "Text Alex your city, project photos, measurements, and plans. That is the fastest way to get pricing direction for a Redmond cabinet installation project.",
+      },
+    ],
+    keywords: [
+      "cabinet installation Redmond",
+      "kitchen cabinet installation Redmond",
+      "cabinet installer Redmond",
+      "IKEA kitchen installation Redmond",
+      "custom cabinet installation Redmond",
+      "cabinet replacement Redmond",
+    ],
+  },
+  {
+    slug: "cabinet-installation-issaquah",
+    href: "/cabinet-installation-issaquah",
+    city: "Issaquah",
+    state: "WA",
+    titleTag: "Cabinet Installation Issaquah WA | Kitchen Cabinet Installer",
+    metaDescription:
+      "NW Premium Design LLC provides cabinet installation in Issaquah, WA, including kitchen cabinet installation, IKEA kitchen systems, custom cabinets, cabinet replacement, built-ins, and finish work.",
+    heading: "Cabinet Installation in Issaquah, WA",
+    intro: [
+      "NW Premium Design LLC provides cabinet installation in Issaquah, WA for kitchens, built-ins, bathroom vanities, and cabinet replacement projects that need a clean, professional finish. Alex works on both full remodel cabinet scopes and targeted installs where the homeowner already has cabinets ordered and just needs the right installer.",
+      "For Issaquah kitchens, cabinet work needs to look balanced, consistent, and fully resolved once counters, backsplash, and hardware are in place. That finish-first approach is what NW Premium Design LLC brings to the job.",
+    ],
+    heroImageSrc: "/images/yelp/yelp-157.jpg",
+    heroImageAlt: "Issaquah kitchen cabinet installation by NW Premium Design",
+    nearbyAreasTitle: "Areas We Serve Near Issaquah",
+    nearbyAreas: [
+      "Issaquah Highlands",
+      "Olde Town",
+      "South Cove",
+      "Squak Mountain",
+      "Talus",
+      "Mirrormont",
+      "Newport Way",
+      "Klahanie",
+    ],
+    sections: [
+      {
+        title: "Issaquah Kitchen Cabinet Installation",
+        paragraphs: [
+          "Issaquah kitchen remodels often need an installer who can keep cabinet layout clean while coordinating around real-world remodel constraints. NW Premium Design LLC handles kitchen cabinet installation Issaquah homeowners need with close attention to reveals, alignment, fillers, and final trim details.",
+          "That helps the cabinetry read cleanly once the rest of the kitchen comes together, especially in family kitchens where the cabinet lines are highly visible every day.",
+        ],
+      },
+      {
+        title: "IKEA, Custom & Cabinet Replacement Projects",
+        paragraphs: [
+          "NW Premium Design LLC installs IKEA kitchens, custom cabinets, and replacement cabinet packages in Issaquah homes. That includes assembly, hanging, leveling, hardware placement, side panels, trim, and finish work that keeps the install looking deliberate instead of rushed.",
+          "If you are comparing cabinet installation Issaquah options, that finish layer is often the biggest difference between a passable result and a strong one.",
+        ],
+      },
+      {
+        title: "Built-Ins, Vanities & Finish Carpentry",
+        paragraphs: [
+          "Built-ins, bathroom vanity cabinet installation, and cabinet replacement projects all need the same precision with measurements and trim. NW Premium Design LLC carries that same care into smaller cabinet runs and support carpentry so the completed space feels consistent.",
+        ],
+      },
+    ],
+    whyChoose: [
+      "Good fit for Issaquah remodels that need clean cabinet lines and finish carpentry.",
+      "Experienced with IKEA kitchen installation, custom cabinets, and cabinet replacement.",
+      "Direct estimate process through plans, photos, and measurements sent to Alex.",
+      "Built-ins, vanity cabinets, and kitchen finish details can stay under one installer.",
+    ],
+    recentWorkTitle: "Recent Cabinet Installation Work",
+    recentWorkBody:
+      "Recent work aligned with Issaquah projects includes shaker kitchens, custom cabinet installs, vanity cabinet replacement, and modern built-in details completed with consistent finish quality.",
+    recentWorkImages: [
+      {
+        src: "/images/yelp/yelp-157.jpg",
+        alt: "Issaquah kitchen cabinet installation by NW Premium Design",
+        caption: "Kitchen cabinet installation with clean white cabinetry and finished detail work.",
+      },
+      {
+        src: "/images/yelp/yelp-141.jpg",
+        alt: "Issaquah built-in cabinet installation by NW Premium Design",
+        caption: "Built-in and cabinet install work with balanced reveals and finished appliance integration.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do you install IKEA kitchen cabinets in Issaquah?",
+        answer: "Yes. NW Premium Design LLC installs IKEA kitchen systems in Issaquah and handles the panel, trim, and alignment work that gives the finished kitchen a cleaner result.",
+      },
+      {
+        question: "Do you install custom cabinets?",
+        answer: "Yes. Alex installs custom cabinetry and semi-custom cabinet packages for Issaquah kitchens, built-ins, and cabinet replacement scopes.",
+      },
+      {
+        question: "Can you install cabinets I already purchased?",
+        answer: "Yes. If your cabinet package is already ordered, NW Premium Design LLC can handle the installation and finish details.",
+      },
+      {
+        question: "Do you handle cabinet replacement during a remodel?",
+        answer: "Yes. Cabinet replacement and remodel finish work often go together, and NW Premium Design LLC is set up to handle that combination cleanly.",
+      },
+      {
+        question: "How do I get an estimate?",
+        answer: "Text Alex your plans, measurements, and project photos for the fastest estimate process.",
+      },
+    ],
+    keywords: [
+      "cabinet installation Issaquah",
+      "kitchen cabinet installation Issaquah",
+      "cabinet installer Issaquah",
+      "IKEA kitchen installation Issaquah",
+      "custom cabinet installation Issaquah",
+    ],
+  },
+  {
+    slug: "cabinet-installation-renton",
+    href: "/cabinet-installation-renton",
+    city: "Renton",
+    state: "WA",
+    titleTag: "Cabinet Installation Renton WA | Kitchen Cabinet Installer",
+    metaDescription:
+      "NW Premium Design LLC provides cabinet installation in Renton, WA, including kitchen cabinet installation, IKEA kitchen systems, custom cabinets, cabinet replacement, built-ins, and finish work.",
+    heading: "Cabinet Installation in Renton, WA",
+    intro: [
+      "NW Premium Design LLC provides cabinet installation in Renton, WA for homeowners updating kitchens, replacing cabinets, adding built-ins, or installing vanity cabinets during a remodel. Alex focuses on clean alignment, trim details, and practical sequencing so the cabinet work looks sharp and moves efficiently.",
+      "From straightforward kitchen cabinet installation Renton projects to larger remodels with cabinet replacement and finish carpentry, the work is built around precision rather than speed alone.",
+    ],
+    heroImageSrc: "/images/yelp/yelp-170.jpg",
+    heroImageAlt: "Renton kitchen cabinet installation by NW Premium Design",
+    nearbyAreasTitle: "Areas We Serve Near Renton",
+    nearbyAreas: [
+      "The Highlands",
+      "Renton Highlands",
+      "Fairwood",
+      "Kennydale",
+      "Newcastle",
+      "Benson Hill",
+      "Maplewood",
+      "Downtown Renton",
+    ],
+    sections: [
+      {
+        title: "Renton Kitchen Cabinet Installation",
+        paragraphs: [
+          "Renton kitchens often need an installer who can work cleanly through uneven conditions, active remodel schedules, and cabinet replacement scopes without losing finish quality. NW Premium Design LLC approaches kitchen cabinet installation Renton homeowners need with attention to shimming, reveal consistency, panels, and trim.",
+          "That keeps the cabinet work looking deliberate whether the project is a family kitchen refresh or a larger remodel.",
+        ],
+      },
+      {
+        title: "IKEA, Custom & Replacement Cabinet Projects",
+        paragraphs: [
+          "NW Premium Design LLC installs IKEA kitchens, custom cabinet packages, and replacement cabinet systems in Renton homes. That includes cabinet assembly, hanging, leveling, panel fitting, hardware install, and the finish details that make the installation feel complete.",
+          "For homeowners searching cabinet installer Renton or IKEA kitchen installation Renton, the value is having one installer who understands both cabinet layout and the finish details that follow it.",
+        ],
+      },
+      {
+        title: "Built-Ins, Vanities & Finish Work",
+        paragraphs: [
+          "Built-ins, bathroom vanity cabinet installation, storage walls, and cabinet replacement projects need the same care as a full kitchen. NW Premium Design LLC brings that precision to smaller cabinet scopes and the trim work that helps the finished room feel cohesive.",
+        ],
+      },
+    ],
+    whyChoose: [
+      "Strong fit for Renton kitchens, built-ins, and cabinet replacement projects.",
+      "Experienced with IKEA kitchen installation, custom cabinets, and finish carpentry.",
+      "Clear communication from estimate through install details.",
+      "Alex’s cabinet-first background helps the finished work look more resolved.",
+    ],
+    recentWorkTitle: "Recent Cabinet Installation Work",
+    recentWorkBody:
+      "Recent work relevant to Renton includes white shaker kitchen installs, cabinet replacement work, frameless layouts, and vanity cabinet updates with clean finish detailing.",
+    recentWorkImages: [
+      {
+        src: "/images/yelp/yelp-170.jpg",
+        alt: "Renton kitchen cabinet installation by NW Premium Design",
+        caption: "Kitchen cabinet installation with clean galley layout and consistent trim lines.",
+      },
+      {
+        src: "/images/yelp/yelp-121.jpg",
+        alt: "Renton cabinet replacement project by NW Premium Design",
+        caption: "Cabinet replacement and kitchen install work during an active remodel.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do you install IKEA kitchen cabinets in Renton?",
+        answer: "Yes. NW Premium Design LLC installs IKEA kitchens in Renton, including assembly, leveling, panel fitting, trim, and final adjustment.",
+      },
+      {
+        question: "Do you install custom cabinets?",
+        answer: "Yes. Alex installs custom cabinets, frameless systems, and semi-custom cabinet lines for Renton kitchens, built-ins, and cabinet replacement projects.",
+      },
+      {
+        question: "Can you install cabinets I already purchased?",
+        answer: "Yes. If your cabinet package is already purchased, NW Premium Design LLC can handle the installation and finish work.",
+      },
+      {
+        question: "Do you handle cabinet replacement during a remodel?",
+        answer: "Yes. Cabinet replacement is a common part of Renton remodels, especially where homeowners want cleaner transitions and stronger finish quality.",
+      },
+      {
+        question: "How do I get an estimate?",
+        answer: "Text Alex your city, photos, plans, and measurements for the fastest estimate response.",
+      },
+    ],
+    keywords: [
+      "cabinet installation Renton",
+      "kitchen cabinet installation Renton",
+      "cabinet installer Renton",
+      "IKEA kitchen installation Renton",
+      "custom cabinet installation Renton",
+    ],
+  },
+  {
+    slug: "cabinet-installation-kent",
+    href: "/cabinet-installation-kent",
+    city: "Kent",
+    state: "WA",
+    titleTag: "Cabinet Installation Kent WA | Kitchen Cabinet Installer",
+    metaDescription:
+      "NW Premium Design LLC provides cabinet installation in Kent, WA, including kitchen cabinet installation, IKEA kitchens, custom cabinetry, cabinet replacement, built-ins, and kitchen remodel finish work.",
+    heading: "Cabinet Installation in Kent, WA",
+    intro: [
+      "NW Premium Design LLC provides cabinet installation in Kent, WA for homeowners who need cabinet work done cleanly, efficiently, and with better finish detail than the average install crew provides. Alex handles kitchen cabinet installation, built-ins, cabinet replacement, vanity cabinets, and support finish work with a cabinet-first approach.",
+      "If you are updating an older kitchen, replacing worn cabinets, or installing a new cabinet package you already purchased, NW Premium Design LLC can step into the project and carry the installation through the finish stage.",
+    ],
+    heroImageSrc: "/images/yelp/yelp-47.jpg",
+    heroImageAlt: "Kent kitchen cabinet installation by NW Premium Design",
+    nearbyAreasTitle: "Areas We Serve Near Kent",
+    nearbyAreas: [
+      "East Hill",
+      "West Hill",
+      "Panther Lake",
+      "Covington",
+      "Lake Meridian",
+      "Downtown Kent",
+      "Miston",
+      "Scenic Hill",
+    ],
+    sections: [
+      {
+        title: "Kent Kitchen Cabinet Installation",
+        paragraphs: [
+          "Kent kitchens often need practical cabinet upgrades that still have to look finished once the work is done. NW Premium Design LLC handles kitchen cabinet installation Kent homeowners need with attention to alignment, reveal consistency, trim, fillers, and cabinet replacement details that help older spaces feel updated.",
+          "That makes a major difference in kitchens where the cabinets set the visual tone for the whole room.",
+        ],
+      },
+      {
+        title: "IKEA, Custom & Cabinet Replacement Projects",
+        paragraphs: [
+          "NW Premium Design LLC installs IKEA kitchens, custom cabinet packages, and replacement cabinet systems in Kent homes. That includes assembly, mounting, leveling, panels, hardware, and support finish work that helps the final install look more complete.",
+          "For homeowners searching cabinet installation Kent or kitchen cabinet installation Kent, that finish-first approach is often what separates a solid install from one that feels temporary.",
+        ],
+      },
+      {
+        title: "Built-Ins, Vanities & Finish Carpentry",
+        paragraphs: [
+          "Built-ins, storage cabinets, bathroom vanity cabinet installation, and kitchen finish carpentry can all be handled under the same scope. That keeps the project tighter and reduces the number of moving parts once installation begins.",
+        ],
+      },
+    ],
+    whyChoose: [
+      "Cabinet installation is the core specialty, not an add-on service.",
+      "Good fit for Kent homeowners replacing cabinets or updating kitchens on a focused budget.",
+      "Experienced with IKEA systems, custom cabinet packages, built-ins, and vanity cabinets.",
+      "Fast estimate process through texted photos, measurements, and plans.",
+    ],
+    recentWorkTitle: "Recent Cabinet Installation Work",
+    recentWorkBody:
+      "Recent Kent-style projects include white kitchens, cabinet replacement work, practical storage upgrades, and built-in cabinet installs with clean finish carpentry.",
+    recentWorkImages: [
+      {
+        src: "/images/yelp/yelp-47.jpg",
+        alt: "Kent kitchen cabinet installation by NW Premium Design",
+        caption: "Kitchen cabinet installation with finished island detailing and clean wall cabinet alignment.",
+      },
+      {
+        src: "/images/yelp/yelp-157.jpg",
+        alt: "Kent custom cabinet installation by NW Premium Design",
+        caption: "Custom cabinet installation and finish work on a bright family kitchen layout.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do you install IKEA kitchen cabinets in Kent?",
+        answer: "Yes. NW Premium Design LLC installs IKEA kitchens in Kent and handles the alignment, panels, trim, and detail work that make the kitchen feel finished.",
+      },
+      {
+        question: "Do you install custom cabinets?",
+        answer: "Yes. Alex installs custom cabinet systems, semi-custom packages, built-ins, and vanity cabinets for Kent homes.",
+      },
+      {
+        question: "Can you install cabinets I already purchased?",
+        answer: "Yes. If your cabinets are already purchased, NW Premium Design LLC can handle the installation and finish details.",
+      },
+      {
+        question: "Do you handle cabinet replacement during a remodel?",
+        answer: "Yes. Cabinet replacement is a common Kent project type, especially where an older kitchen needs a cleaner layout and updated finish.",
+      },
+      {
+        question: "How do I get an estimate?",
+        answer: "Text Alex your city, cabinet photos, measurements, and project details for the fastest estimate path.",
+      },
+    ],
+    keywords: [
+      "cabinet installation Kent",
+      "kitchen cabinet installation Kent",
+      "cabinet installer Kent",
+      "IKEA kitchen installation Kent",
+      "custom cabinet installation Kent",
+    ],
+  },
+  {
+    slug: "cabinet-installation-auburn",
+    href: "/cabinet-installation-auburn",
+    city: "Auburn",
+    state: "WA",
+    titleTag: "Cabinet Installation Auburn WA | Kitchen Cabinet Installer",
+    metaDescription:
+      "NW Premium Design LLC provides cabinet installation in Auburn, WA, including kitchen cabinet installation, IKEA kitchen systems, custom cabinetry, cabinet replacement, built-ins, and finish work.",
+    heading: "Cabinet Installation in Auburn, WA",
+    intro: [
+      "NW Premium Design LLC provides cabinet installation in Auburn, WA for kitchens, built-ins, vanity cabinets, and cabinet replacement projects that need a clean install and a strong finished look. Alex works locally out of Auburn and brings a cabinet-first process to projects that need better fit, better trim, and better alignment.",
+      "For homeowners in Auburn, that means a cabinet installer who can handle IKEA kitchen installation, custom cabinet installation, and finish carpentry without losing quality once the pace picks up.",
+    ],
+    heroImageSrc: "/images/yelp/yelp-60.jpg",
+    heroImageAlt: "Auburn kitchen cabinet installation by NW Premium Design",
+    nearbyAreasTitle: "Areas We Serve Near Auburn",
+    nearbyAreas: [
+      "Lakeland Hills",
+      "Lea Hill",
+      "West Hill",
+      "Downtown Auburn",
+      "Algona",
+      "Pacific",
+      "North Auburn",
+      "South Auburn",
+    ],
+    sections: [
+      {
+        title: "Auburn Kitchen Cabinet Installation",
+        paragraphs: [
+          "Auburn kitchen projects often need an installer who can work efficiently while still keeping the cabinet lines clean and the trim details sharp. NW Premium Design LLC handles kitchen cabinet installation Auburn homeowners need when the cabinetry has to feel finished, not just functional.",
+          "That includes new cabinet installs, replacement cabinets, and remodel work where the cabinet layout drives the rest of the room.",
+        ],
+      },
+      {
+        title: "IKEA, Custom & Replacement Cabinet Projects",
+        paragraphs: [
+          "NW Premium Design LLC installs IKEA kitchens, custom cabinet packages, and cabinet replacement systems in Auburn homes. That includes leveling, panels, fillers, hardware, trim, and the support finish work that keeps the completed kitchen looking balanced.",
+          "For homeowners searching cabinet installation Auburn or cabinet installer Auburn, the main difference is the quality of the finished details after the boxes are set.",
+        ],
+      },
+      {
+        title: "Built-Ins, Vanities & Finish Work",
+        paragraphs: [
+          "Built-ins, vanity cabinets, bathroom storage, and kitchen finish carpentry can all be handled under the same scope. That helps keep the project simpler and the final finish more consistent.",
+        ],
+      },
+    ],
+    whyChoose: [
+      "Local Auburn-based business with cabinet installation as the core specialty.",
+      "Strong fit for Auburn homeowners replacing cabinets, upgrading kitchens, or adding built-ins.",
+      "Experienced with IKEA kitchen installation, custom cabinet systems, and finish carpentry.",
+      "Direct estimate process with Alex by text, photos, plans, and measurements.",
+    ],
+    recentWorkTitle: "Recent Cabinet Installation Work",
+    recentWorkBody:
+      "Recent work aligned with Auburn projects includes white shaker kitchens, cabinet replacement installs, built-ins, and vanity cabinet work with crisp trim and panel detailing.",
+    recentWorkImages: [
+      {
+        src: "/images/yelp/yelp-60.jpg",
+        alt: "Auburn kitchen cabinet installation by NW Premium Design",
+        caption: "Kitchen cabinet installation with large island, finished end panels, and balanced cabinet lines.",
+      },
+      {
+        src: "/images/yelp/yelp-170.jpg",
+        alt: "Auburn cabinet replacement project by NW Premium Design",
+        caption: "Cabinet replacement and clean finish detailing on a practical, high-use kitchen layout.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do you install IKEA kitchen cabinets in Auburn?",
+        answer: "Yes. NW Premium Design LLC installs IKEA kitchens in Auburn and handles the panel, trim, and alignment details needed for a cleaner finished result.",
+      },
+      {
+        question: "Do you install custom cabinets?",
+        answer: "Yes. Alex installs custom cabinets, semi-custom lines, built-ins, and vanity cabinets for Auburn homes.",
+      },
+      {
+        question: "Can you install cabinets I already purchased?",
+        answer: "Yes. If your cabinet package is already purchased, NW Premium Design LLC can handle the installation and finish work.",
+      },
+      {
+        question: "Do you handle cabinet replacement during a remodel?",
+        answer: "Yes. Cabinet replacement is a common part of Auburn kitchen remodels, especially when the goal is to modernize the room without losing fit and finish quality.",
+      },
+      {
+        question: "How do I get an estimate?",
+        answer: "Text Alex your city, project photos, plans, and measurements for the fastest estimate response.",
+      },
+    ],
+    keywords: [
+      "cabinet installation Auburn",
+      "kitchen cabinet installation Auburn",
+      "cabinet installer Auburn",
+      "IKEA kitchen installation Auburn",
+      "custom cabinet installation Auburn",
+    ],
+  },
+  {
+    slug: "cabinet-installation-federal-way",
+    href: "/cabinet-installation-federal-way",
+    city: "Federal Way",
+    state: "WA",
+    titleTag: "Cabinet Installation Federal Way WA | Kitchen Cabinet Installer",
+    metaDescription:
+      "NW Premium Design LLC provides cabinet installation in Federal Way, WA, including kitchen cabinet installation, IKEA kitchens, custom cabinetry, cabinet replacement, built-ins, and finish work.",
+    heading: "Cabinet Installation in Federal Way, WA",
+    intro: [
+      "NW Premium Design LLC provides cabinet installation in Federal Way, WA for homeowners updating kitchens, replacing cabinets, adding built-ins, or installing bathroom vanity cabinets during a remodel. Alex focuses on practical cabinet installs with stronger fit, trim, and alignment than most basic install crews deliver.",
+      "Whether the project is a full kitchen cabinet installation Federal Way homeowners are planning or a more focused cabinet replacement scope, the work stays detail-driven from start to finish.",
+    ],
+    heroImageSrc: "/images/yelp/yelp-165.jpg",
+    heroImageAlt: "Federal Way kitchen cabinet installation by NW Premium Design",
+    nearbyAreasTitle: "Areas We Serve Near Federal Way",
+    nearbyAreas: [
+      "Twin Lakes",
+      "Mirror Lake",
+      "Dash Point",
+      "Lakota",
+      "Northeast Tacoma",
+      "Marine Hills",
+      "Adelaide",
+      "West Campus",
+    ],
+    sections: [
+      {
+        title: "Federal Way Kitchen Cabinet Installation",
+        paragraphs: [
+          "Federal Way kitchens often need a cabinet installer who can work through remodel realities while still keeping the finish clean. NW Premium Design LLC handles kitchen cabinet installation Federal Way homeowners need with attention to trim, fillers, hardware placement, and balanced cabinet lines.",
+          "That approach helps the kitchen look more intentional once counters, appliances, and backsplash are finished.",
+        ],
+      },
+      {
+        title: "IKEA, Custom & Cabinet Replacement Projects",
+        paragraphs: [
+          "NW Premium Design LLC installs IKEA kitchens, custom cabinet packages, and replacement cabinet systems in Federal Way homes. That includes cabinet assembly, leveling, hanging, panel work, trim, and the finishing details that make the result feel complete.",
+          "For homeowners searching cabinet installation Federal Way or cabinet installer Federal Way, the value is having one installer who can carry both the install and the finish work well.",
+        ],
+      },
+      {
+        title: "Built-Ins, Vanities & Finish Carpentry",
+        paragraphs: [
+          "Built-ins, vanity cabinets, storage walls, and supporting finish carpentry can all be handled under the same cabinet-centered scope, which keeps the project simpler and more cohesive.",
+        ],
+      },
+    ],
+    whyChoose: [
+      "Strong fit for Federal Way kitchens, cabinet replacement, and practical built-in projects.",
+      "Experienced with IKEA kitchens, custom cabinet installs, and vanity cabinets.",
+      "Reliable communication around project details, measurements, and scope changes.",
+      "Cabinet installation stays the central specialty from start to finish.",
+    ],
+    recentWorkTitle: "Recent Cabinet Installation Work",
+    recentWorkBody:
+      "Recent work relevant to Federal Way includes clean white kitchens, cabinet replacement jobs, framed and frameless cabinet installs, and built-ins completed with finish-focused detailing.",
+    recentWorkImages: [
+      {
+        src: "/images/yelp/yelp-165.jpg",
+        alt: "Federal Way kitchen cabinet installation by NW Premium Design",
+        caption: "Kitchen cabinet installation with glass-front cabinetry and finished wall-to-wall detailing.",
+      },
+      {
+        src: "/images/yelp/yelp-47.jpg",
+        alt: "Federal Way custom cabinet installation by NW Premium Design",
+        caption: "Custom cabinet installation and island detailing on a bright, open kitchen layout.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do you install IKEA kitchen cabinets in Federal Way?",
+        answer: "Yes. NW Premium Design LLC installs IKEA kitchens in Federal Way and handles the panel, trim, and alignment work needed for a cleaner finished result.",
+      },
+      {
+        question: "Do you install custom cabinets?",
+        answer: "Yes. Alex installs custom cabinet systems, semi-custom packages, built-ins, and vanity cabinets for Federal Way homes.",
+      },
+      {
+        question: "Can you install cabinets I already purchased?",
+        answer: "Yes. If you already have the cabinets purchased, NW Premium Design LLC can handle the installation and finish work.",
+      },
+      {
+        question: "Do you handle cabinet replacement during a remodel?",
+        answer: "Yes. Cabinet replacement is a common part of Federal Way kitchen remodels, especially where the goal is a cleaner layout and sharper final finish.",
+      },
+      {
+        question: "How do I get an estimate?",
+        answer: "Text Alex your city, plans, project photos, and measurements for the fastest estimate response.",
+      },
+    ],
+    keywords: [
+      "cabinet installation Federal Way",
+      "kitchen cabinet installation Federal Way",
+      "cabinet installer Federal Way",
+      "IKEA kitchen installation Federal Way",
+      "custom cabinet installation Federal Way",
+    ],
+  },
+  {
+    slug: "cabinet-installation-mercer-island",
+    href: "/cabinet-installation-mercer-island",
+    city: "Mercer Island",
+    state: "WA",
+    titleTag: "Cabinet Installation Mercer Island WA | High-End Cabinet Installer",
+    metaDescription:
+      "NW Premium Design LLC provides cabinet installation in Mercer Island, WA, including custom cabinets, kitchen cabinet installation, European frameless systems, cabinet replacement, built-ins, and finish work.",
+    heading: "Cabinet Installation in Mercer Island, WA",
+    intro: [
+      "NW Premium Design LLC provides cabinet installation in Mercer Island, WA for homeowners who want a polished, premium result in kitchens, built-ins, bathroom vanities, and cabinet replacement projects. Alex focuses on careful alignment, balanced reveals, and the trim details that make cabinetry feel fully integrated into the home.",
+      "For Mercer Island kitchens, the expectation is usually not just that the cabinets fit, but that the finished installation looks deliberate and refined. That is exactly where NW Premium Design LLC performs best.",
+    ],
+    heroImageSrc: "/images/yelp/yelp-110.jpg",
+    heroImageAlt: "Mercer Island kitchen cabinet installation by NW Premium Design",
+    nearbyAreasTitle: "Areas We Serve Near Mercer Island",
+    nearbyAreas: [
+      "First Hill",
+      "North End",
+      "East Seattle waterfront",
+      "Luther Burbank area",
+      "Mercerdale",
+      "The Lakes",
+      "Island Crest",
+      "Roanoke Park",
+    ],
+    sections: [
+      {
+        title: "Mercer Island Kitchen Cabinet Installation",
+        paragraphs: [
+          "Mercer Island kitchens often involve design-sensitive remodels where the cabinet work needs to read cleanly from every angle. NW Premium Design LLC handles kitchen cabinet installation Mercer Island homeowners need with attention to reveals, hardware placement, fillers, trim, and final fit.",
+          "That helps the kitchen feel premium once countertops, appliances, lighting, and finish materials are all in place.",
+        ],
+      },
+      {
+        title: "Custom, Frameless & High-End Cabinet Systems",
+        paragraphs: [
+          "NW Premium Design LLC installs custom cabinets, European frameless systems, and high-end replacement cabinet packages in Mercer Island homes. The work is not just about getting cabinets in place. It is about making the installation feel clean, tailored, and worthy of the room around it.",
+          "For homeowners searching cabinet installation Mercer Island or high-end cabinet installer Mercer Island, finish quality is where the real difference shows up.",
+        ],
+      },
+      {
+        title: "Built-Ins, Vanities & Finish Details",
+        paragraphs: [
+          "Built-ins, vanity cabinets, custom storage walls, and detailed finish carpentry need the same patience and alignment discipline as a full kitchen. NW Premium Design LLC carries that same standard into every supporting cabinet scope.",
+        ],
+      },
+    ],
+    whyChoose: [
+      "Strong fit for Mercer Island homes where cabinet finish quality is highly visible.",
+      "Experienced with custom cabinetry, frameless systems, built-ins, and cabinet replacement.",
+      "Detail-focused approach to panel work, trim, reveals, and final adjustments.",
+      "Direct communication with Alex throughout estimate, planning, and installation.",
+    ],
+    recentWorkTitle: "Recent Cabinet Installation Work",
+    recentWorkBody:
+      "Recent work aligned with Mercer Island projects includes refined island kitchens, custom cabinet layouts, frameless systems, and built-ins finished with a premium, detail-driven standard.",
+    recentWorkImages: [
+      {
+        src: "/images/yelp/yelp-110.jpg",
+        alt: "Mercer Island kitchen cabinet installation by NW Premium Design",
+        caption: "High-visibility island kitchen with clean cabinet lines and polished finish detailing.",
+      },
+      {
+        src: "/images/yelp/yelp-22.jpg",
+        alt: "Mercer Island custom cabinet installation by NW Premium Design",
+        caption: "Premium cabinet installation with dark island detailing and refined alignment.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do you install custom cabinets on Mercer Island?",
+        answer: "Yes. NW Premium Design LLC installs custom cabinet systems, frameless cabinetry, and premium cabinet packages for Mercer Island homes.",
+      },
+      {
+        question: "Can you install cabinets we already purchased?",
+        answer: "Yes. Alex can take over cabinet installation even if the cabinet package was sourced separately, as long as the scope and timing are coordinated properly.",
+      },
+      {
+        question: "Do you handle built-ins and vanity cabinets too?",
+        answer: "Yes. Built-ins, vanity cabinets, custom storage, and related finish carpentry are all part of the work.",
+      },
+      {
+        question: "Do you handle cabinet replacement during a remodel?",
+        answer: "Yes. Cabinet replacement is a common part of Mercer Island remodels, especially where homeowners want a more refined finished look from the installation.",
+      },
+      {
+        question: "How do I get an estimate?",
+        answer: "Text Alex your city, project photos, measurements, and plans for the fastest estimate response.",
+      },
+    ],
+    keywords: [
+      "cabinet installation Mercer Island",
+      "kitchen cabinet installation Mercer Island",
+      "cabinet installer Mercer Island",
+      "custom cabinet installation Mercer Island",
+      "high-end cabinet installer Mercer Island",
+    ],
+  },
+  {
+    slug: "cabinet-installation-medina",
+    href: "/cabinet-installation-medina",
+    city: "Medina",
+    state: "WA",
+    titleTag: "Cabinet Installation Medina WA | High-End Cabinet Installer",
+    metaDescription:
+      "NW Premium Design LLC provides cabinet installation in Medina, WA, including custom cabinets, kitchen cabinet installation, European frameless systems, built-ins, cabinet replacement, and finish work.",
+    heading: "Cabinet Installation in Medina, WA",
+    intro: [
+      "NW Premium Design LLC provides cabinet installation in Medina, WA for homeowners who need a refined final result in kitchens, built-ins, vanity cabinets, and cabinet replacement projects. Alex focuses on precision cabinet layout, clean panel transitions, careful trim work, and final detailing that looks right up close.",
+      "For Medina homes, that means cabinet work that feels intentional, premium, and tailored to the room rather than simply installed.",
+    ],
+    heroImageSrc: "/images/yelp/yelp-25.jpg",
+    heroImageAlt: "Medina high-end kitchen cabinet installation by NW Premium Design",
+    nearbyAreasTitle: "Areas We Serve Near Medina",
+    nearbyAreas: [
+      "Overlake",
+      "Evergreen Point",
+      "Hunts Point",
+      "Yarrow Point",
+      "Clyde Hill",
+      "West Bellevue",
+      "Meydenbauer Bay",
+      "Madinah waterfront area",
+    ],
+    sections: [
+      {
+        title: "High-End Cabinet Installation in Medina",
+        paragraphs: [
+          "Medina cabinet projects usually call for more than basic installation labor. Cabinets need to fit cleanly against finished surfaces, hardware and panels need to stay consistent, and the final visual balance matters. NW Premium Design LLC handles cabinet installation Medina homeowners can rely on when the expectation is a polished, high-end result.",
+          "That includes kitchen cabinet installation, built-ins, vanity cabinets, and cabinet replacement work where the cabinetry is central to the room’s design.",
+        ],
+      },
+      {
+        title: "Custom, Frameless & Designer Cabinet Systems",
+        paragraphs: [
+          "NW Premium Design LLC installs custom cabinetry, European frameless systems, and high-end replacement cabinet packages in Medina homes. The focus stays on alignment, reveals, trim, and finish details that make the cabinets feel purpose-built for the space.",
+          "For homeowners searching cabinet installation Medina or high-end cabinet installer Medina, that finish-driven execution is the difference that matters.",
+        ],
+      },
+      {
+        title: "Built-Ins, Vanities & Finish Details",
+        paragraphs: [
+          "Built-ins, vanity cabinets, custom storage walls, and detailed finish carpentry all need the same discipline as a full kitchen install. NW Premium Design LLC applies that same care to every supporting cabinet scope so the completed home feels cohesive.",
+        ],
+      },
+    ],
+    whyChoose: [
+      "Strong fit for Medina homes where finish quality and precision matter visibly.",
+      "Experienced with custom cabinet systems, frameless layouts, built-ins, and cabinet replacement.",
+      "Careful approach to alignment, trim, panels, and final adjustments.",
+      "Direct coordination with Alex from estimate through install planning.",
+    ],
+    recentWorkTitle: "Detail-Focused Cabinet Installation",
+    recentWorkBody:
+      "Recent work aligned with Medina projects includes high-end island kitchens, custom cabinet layouts, frameless systems, and built-ins finished with a clean, premium standard.",
+    recentWorkImages: [
+      {
+        src: "/images/yelp/yelp-25.jpg",
+        alt: "Medina custom cabinet installation by NW Premium Design",
+        caption: "High-end kitchen installation with custom cabinetry, premium island detailing, and balanced reveals.",
+      },
+      {
+        src: "/images/yelp/yelp-140.jpg",
+        alt: "Medina high-end cabinet installation by NW Premium Design",
+        caption: "Detail-focused cabinet installation with integrated lighting and polished finish carpentry.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Do you install custom cabinets in Medina?",
+        answer: "Yes. NW Premium Design LLC installs custom cabinet systems, frameless cabinetry, and premium cabinet packages for Medina homes.",
+      },
+      {
+        question: "Can you install cabinets we already purchased?",
+        answer: "Yes. Alex can install cabinet packages sourced separately, as long as the project timing and details are coordinated properly.",
+      },
+      {
+        question: "Do you handle built-ins and vanity cabinets too?",
+        answer: "Yes. Built-ins, vanity cabinets, and detailed storage walls are all part of the work.",
+      },
+      {
+        question: "Do you handle cabinet replacement during a remodel?",
+        answer: "Yes. Cabinet replacement is a common part of premium remodels, especially where the finished cabinetry needs to match the rest of the home’s quality level.",
+      },
+      {
+        question: "How do I get an estimate?",
+        answer: "Text Alex your city, plans, measurements, and project photos for the fastest estimate path.",
+      },
+    ],
+    keywords: [
+      "cabinet installation Medina",
+      "kitchen cabinet installation Medina",
+      "cabinet installer Medina",
+      "custom cabinet installation Medina",
+      "high-end cabinet installer Medina",
+    ],
+  },
 ];
 
 export const serviceAreaHub: ServiceAreaHubData = {
@@ -466,10 +1299,6 @@ export const serviceAreaHub: ServiceAreaHubData = {
   ],
   primaryAreas: ["Seattle", "Bellevue", "Kirkland", "Clyde Hill"],
   otherAreas: [
-    "Kent",
-    "Renton",
-    "Auburn",
-    "Federal Way",
     "Tacoma",
     "Burien",
     "Tukwila",
@@ -477,11 +1306,7 @@ export const serviceAreaHub: ServiceAreaHubData = {
     "Des Moines",
     "Normandy Park",
     "Sammamish",
-    "Redmond",
-    "Issaquah",
     "Newcastle",
-    "Mercer Island",
-    "Medina",
     "Hunts Point",
     "Yarrow Point",
     "Bothell",

@@ -1,13 +1,19 @@
-const SITEMAP_ENTRIES = [
+import { serviceAreaPages } from "@/data/serviceAreas";
+
+const CORE_SITEMAP_ENTRIES = [
   { loc: "https://nwpremiumdesign.com/", priority: "1.0" },
   { loc: "https://nwpremiumdesign.com/services", priority: "0.9" },
   { loc: "https://nwpremiumdesign.com/gallery", priority: "0.8" },
   { loc: "https://nwpremiumdesign.com/contact", priority: "0.8" },
   { loc: "https://nwpremiumdesign.com/service-areas", priority: "0.9" },
-  { loc: "https://nwpremiumdesign.com/cabinet-installation-seattle", priority: "0.9" },
-  { loc: "https://nwpremiumdesign.com/cabinet-installation-bellevue", priority: "0.9" },
-  { loc: "https://nwpremiumdesign.com/cabinet-installation-kirkland", priority: "0.9" },
-  { loc: "https://nwpremiumdesign.com/cabinet-installation-clyde-hill", priority: "0.9" },
+] as const;
+
+const SITEMAP_ENTRIES = [
+  ...CORE_SITEMAP_ENTRIES,
+  ...serviceAreaPages.map((page) => ({
+    loc: `https://nwpremiumdesign.com${page.href}`,
+    priority: "0.9",
+  })),
 ] as const;
 
 const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
