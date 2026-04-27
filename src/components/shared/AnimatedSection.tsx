@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 
 interface AnimatedSectionProps {
   children: React.ReactNode;
@@ -23,53 +22,13 @@ export function AnimatedSection({
   once = false,
   variant = "default",
 }: AnimatedSectionProps) {
-  const ref = useRef<HTMLDivElement>(null);
-  const lastScrollY = useRef(0);
-  const inView = useInView(ref, { once, amount });
-  const [isShown, setIsShown] = useState(false);
-
-  useEffect(() => {
-    if (inView) {
-      setIsShown(true);
-    }
-  }, [inView]);
-
-  useEffect(() => {
-    if (once || !ref.current) {
-      return;
-    }
-
-    lastScrollY.current = window.scrollY;
-    const handleScroll = () => {
-      if (!ref.current) {
-        return;
-      }
-
-      const currentScrollY = window.scrollY;
-      const isScrollingUp = currentScrollY < lastScrollY.current;
-      lastScrollY.current = currentScrollY;
-      const rect = ref.current.getBoundingClientRect();
-
-      if (isScrollingUp && rect.bottom <= 0) {
-        setIsShown(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [once]);
-
   if (variant === "image") {
     return (
       <motion.div
-        ref={ref}
         className={className}
         initial={{ opacity: 0, scale: 0.92, y: 20 }}
-        animate={
-          isShown
-            ? { opacity: 1, scale: 1, y: 0 }
-            : { opacity: 0, scale: 0.92, y: 20 }
-        }
+        whileInView={{ opacity: 1, scale: 1, y: 0 }}
+        viewport={{ once, amount }}
         transition={{
           duration: 0.7,
           delay,
@@ -89,10 +48,10 @@ export function AnimatedSection({
 
   return (
     <motion.div
-      ref={ref}
       className={className}
       initial={initial}
-      animate={isShown ? { opacity: 1, y: 0, x: 0 } : initial}
+      whileInView={{ opacity: 1, y: 0, x: 0 }}
+      viewport={{ once, amount }}
       transition={{ duration: 0.65, delay, ease: [0.16, 1, 0.3, 1] }}
     >
       {children}

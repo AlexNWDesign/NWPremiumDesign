@@ -12,6 +12,9 @@ import { cn } from "@/lib/utils";
 export function Header() {
   const pathname = usePathname();
 
+  const isServiceAreaPath =
+    pathname === "/service-areas" || pathname.startsWith("/cabinet-installation-");
+
   return (
     <header
       className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/90 shadow-sm backdrop-blur-md"
@@ -36,6 +39,8 @@ export function Header() {
             const isActive =
               link.href === "/"
                 ? pathname === "/"
+                : link.href === "/service-areas"
+                  ? isServiceAreaPath
                 : pathname.startsWith(link.href);
             return (
               <Link

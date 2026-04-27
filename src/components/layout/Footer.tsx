@@ -6,10 +6,10 @@ import {
   Phone,
   Mail,
   Star,
-  ExternalLink,
   MessageSquare,
 } from "lucide-react";
 import { BUSINESS, NAV_LINKS } from "@/lib/constants";
+import { SERVICE_AREA_LINKS } from "@/data/serviceAreas";
 
 const SOCIAL_LINKS = [
   {
@@ -33,7 +33,7 @@ export function Footer() {
   return (
     <footer className="bg-navy text-cream">
       <div className="container-site max-w-5xl py-14 sm:py-16">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1fr_auto_auto] lg:gap-16">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1fr_auto_auto_auto] lg:gap-12">
           {/* Brand column */}
           <div>
             <div className="mb-4 flex items-center gap-3">
@@ -77,6 +77,24 @@ export function Footer() {
             </h3>
             <ul className="space-y-2">
               {NAV_LINKS.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-cream/70 transition-colors hover:text-cream"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-cream/50">
+              Service Areas
+            </h3>
+            <ul className="space-y-2">
+              {SERVICE_AREA_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -134,7 +152,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} NW Premium Design LLC. All rights
             reserved.
           </p>
-          <p>Seattle, WA · Serving the Greater Puget Sound</p>
+          <p>Seattle, Bellevue, Kirkland, Clyde Hill & Greater Puget Sound</p>
         </div>
       </div>
     </footer>

@@ -1,32 +1,25 @@
+const SITEMAP_ENTRIES = [
+  { loc: "https://nwpremiumdesign.com/", priority: "1.0" },
+  { loc: "https://nwpremiumdesign.com/services", priority: "0.9" },
+  { loc: "https://nwpremiumdesign.com/gallery", priority: "0.8" },
+  { loc: "https://nwpremiumdesign.com/contact", priority: "0.8" },
+  { loc: "https://nwpremiumdesign.com/service-areas", priority: "0.9" },
+  { loc: "https://nwpremiumdesign.com/cabinet-installation-seattle", priority: "0.9" },
+  { loc: "https://nwpremiumdesign.com/cabinet-installation-bellevue", priority: "0.9" },
+  { loc: "https://nwpremiumdesign.com/cabinet-installation-kirkland", priority: "0.9" },
+  { loc: "https://nwpremiumdesign.com/cabinet-installation-clyde-hill", priority: "0.9" },
+] as const;
+
 const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://nwpremiumdesign.com/</loc>
+${SITEMAP_ENTRIES.map(
+  (entry) => `  <url>
+    <loc>${entry.loc}</loc>
     <lastmod>2026-04-26</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://nwpremiumdesign.com/services</loc>
-    <lastmod>2026-04-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://nwpremiumdesign.com/gallery</loc>
-    <lastmod>2026-04-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://nwpremiumdesign.com/contact</loc>
-    <lastmod>2026-04-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <priority>${entry.priority}</priority>
+  </url>`
+).join("\n\n")}
 </urlset>
 `;
 

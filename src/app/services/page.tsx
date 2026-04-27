@@ -6,6 +6,7 @@ import { services } from "@/data/services";
 import { ServiceDetailSection } from "@/components/services/ServiceDetailSection";
 import { ContactCTA } from "@/components/home/ContactCTA";
 import { AnimatedSection } from "@/components/shared/AnimatedSection";
+import { ServiceAreasSection } from "@/components/service-areas/ServiceAreasSection";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Services — Kitchen & Bathroom Remodeling, Cabinet Installation",
@@ -88,6 +89,7 @@ export default function ServicesPage() {
         ))}
       </div>
 
+      <ServiceAreasSection compact />
       <ContactCTA />
     </>
   );

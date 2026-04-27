@@ -18,6 +18,8 @@ import { cn } from "@/lib/utils";
 export function MobileMenu() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const isServiceAreaPath =
+    pathname === "/service-areas" || pathname.startsWith("/cabinet-installation-");
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
@@ -38,6 +40,8 @@ export function MobileMenu() {
             const isActive =
               link.href === "/"
                 ? pathname === "/"
+                : link.href === "/service-areas"
+                  ? isServiceAreaPath
                 : pathname.startsWith(link.href);
             return (
               <Link

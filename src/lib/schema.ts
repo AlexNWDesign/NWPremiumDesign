@@ -1,16 +1,44 @@
 import { BUSINESS, SITE_URL, SERVICE_AREAS } from "@/lib/constants";
 import type { Service, FAQ } from "@/types/service";
+import type { ServiceAreaPageData } from "@/types/service-area";
 import type { Review } from "@/data/reviews";
 
-export function buildLocalBusinessSchema() {
+const SCHEMA_AREA_SERVED = [
+  "Seattle WA",
+  "Bellevue WA",
+  "Kirkland WA",
+  "Clyde Hill WA",
+  "Kent WA",
+  "Renton WA",
+  "Auburn WA",
+  "Federal Way WA",
+  "Tacoma WA",
+  "Sammamish WA",
+  "Medina WA",
+  "Mercer Island WA",
+  "Redmond WA",
+  "Issaquah WA",
+] as const;
+
+const SCHEMA_OFFERS = [
+  "Cabinet Installation",
+  "IKEA Kitchen Installation",
+  "Custom Cabinet Installation",
+  "Kitchen Cabinet Replacement",
+] as const;
+
+function buildHomeConstructionBusinessSchema({
+  description,
+  areaServed,
+}: {
+  description: string;
+  areaServed: readonly string[];
+}) {
   return {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "@id": `${SITE_URL}/#business`,
     name: BUSINESS.name,
-    alternateName: BUSINESS.shortName,
-    description:
-      "NW Premium Design LLC provides kitchen cabinet installation, IKEA cabinet assembly, European cabinet installation, demolition, kitchen remodeling, bathroom remodeling, and cabinet supply throughout Seattle, Bellevue, Kirkland, Newcastle, Renton, Tacoma, Burien, Medina, Sammamish, Federal Way, Auburn, and the greater Puget Sound area.",
     url: SITE_URL,
     telephone: BUSINESS.phone,
     email: BUSINESS.email,
@@ -22,98 +50,24 @@ export function buildLocalBusinessSchema() {
       postalCode: BUSINESS.address.zip,
       addressCountry: BUSINESS.address.country,
     },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: BUSINESS.geo.lat,
-      longitude: BUSINESS.geo.lng,
-    },
-    areaServed: SERVICE_AREAS.map((city) => ({
-      "@type": "City" as const,
-      name: city,
-      containedInPlace: {
-        "@type": "State" as const,
-        name: "Washington",
+    areaServed,
+    description,
+    makesOffer: SCHEMA_OFFERS.map((name) => ({
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name,
       },
     })),
-    hasOfferCatalog: {
-      "@type": "OfferCatalog",
-      name: "Home Remodeling Services",
-      itemListElement: [
-        {
-          "@type": "Offer",
-          itemOffered: { "@type": "Service", name: "Kitchen Remodeling" },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: { "@type": "Service", name: "Bathroom Remodeling" },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: { "@type": "Service", name: "Cabinet Installation" },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: { "@type": "Service", name: "Kitchen Cabinet Installation" },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: { "@type": "Service", name: "IKEA Cabinet Assembly" },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: { "@type": "Service", name: "European Cabinet Installation" },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: { "@type": "Service", name: "Demolition" },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: { "@type": "Service", name: "Cabinet Supply" },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: { "@type": "Service", name: "Interior Repairs" },
-        },
-      ],
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: String(BUSINESS.googleRating),
-      reviewCount: String(BUSINESS.googleReviewCount),
-      bestRating: "5",
-      worstRating: "1",
-    },
-    sameAs: [
-      BUSINESS.social.instagram,
-      BUSINESS.social.google,
-      BUSINESS.social.yelp,
-    ].filter(Boolean),
-    image: `${SITE_URL}/og-image.jpg`,
-    priceRange: "$$",
-    openingHoursSpecification: [
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-        ],
-        opens: "08:00",
-        closes: "18:00",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Saturday",
-        opens: "09:00",
-        closes: "16:00",
-      },
-    ],
-    paymentAccepted: "Cash, Credit Card, Check",
-    currenciesAccepted: "USD",
   };
+}
+
+export function buildLocalBusinessSchema() {
+  return buildHomeConstructionBusinessSchema({
+    description:
+      "NW Premium Design LLC provides cabinet installation, IKEA kitchen installation, European frameless cabinet installation, custom cabinetry, cabinet replacement, built-ins, bathroom vanities, and kitchen remodel finish work across Seattle, Bellevue, Kirkland, Clyde Hill, and the greater Puget Sound area.",
+    areaServed: SCHEMA_AREA_SERVED,
+  });
 }
 
 export function buildServiceSchema(service: Service) {
@@ -217,4 +171,11 @@ export function buildItemListSchema(services: Service[]) {
       url: `${SITE_URL}/services/${service.slug}`,
     })),
   };
+}
+
+export function buildServiceAreaBusinessSchema(page: ServiceAreaPageData) {
+  return buildHomeConstructionBusinessSchema({
+    description: page.metaDescription,
+    areaServed: [`${page.city} ${page.state}`, ...SCHEMA_AREA_SERVED],
+  });
 }

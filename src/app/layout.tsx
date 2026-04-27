@@ -36,10 +36,6 @@ export default function RootLayout({
         <meta name="geo.placename" content={BUSINESS.address.city} />
         <meta name="geo.position" content={`${BUSINESS.geo.lat};${BUSINESS.geo.lng}`} />
         <meta name="ICBM" content={`${BUSINESS.geo.lat}, ${BUSINESS.geo.lng}`} />
-        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
