@@ -37,23 +37,23 @@ export function ServiceAreasSection({
                 className={`group flex h-full flex-col rounded-2xl border p-5 transition-all duration-500 hover:-translate-y-1 ${
                   light
                     ? "border-white/12 bg-white/6 text-cream hover:border-white/22 hover:bg-white/10"
-                    : "border-navy/10 bg-white text-navy shadow-[0_2px_18px_rgba(15,23,42,0.06)] hover:border-navy/18 hover:shadow-[0_18px_42px_rgba(15,23,42,0.12)]"
+                    : "border-navy/10 bg-white text-cream shadow-[0_2px_18px_rgba(15,23,42,0.06)] hover:border-navy/15 hover:bg-cream-dark hover:shadow-[0_18px_42px_rgba(15,23,42,0.12)]"
                 }`}
               >
                 <div className="flex items-center gap-3">
                   <div className={`flex size-10 items-center justify-center rounded-full ${light ? "bg-white/10" : "bg-navy/6"}`}>
-                    <MapPin className={`size-4 ${light ? "text-cream" : "text-navy"}`} />
+                    <MapPin className={`size-4 ${light ? "text-cream" : "text-cream"}`} />
                   </div>
                   <h3 className="font-serif text-lg font-semibold">
                     {area.shortLabel}
                   </h3>
                 </div>
-                <p className={`mt-3 text-sm leading-relaxed ${light ? "text-cream/72" : "text-navy/65"}`}>
+                <p className={`mt-3 text-sm leading-relaxed ${light ? "text-cream/70" : "text-cream/70"}`}>
                   {area.label === "Other Service Areas"
                     ? "View the broader service area hub for Seattle, the Eastside, South King County, and the greater Puget Sound region."
                     : `See cabinet installation details, local neighborhoods served, and project-specific FAQs for ${area.shortLabel}.`}
                 </p>
-                <div className={`mt-4 inline-flex items-center gap-1 text-sm font-semibold ${light ? "text-cream" : "text-navy"}`}>
+                <div className={`mt-4 inline-flex items-center gap-1 text-sm font-semibold ${light ? "text-cream" : "text-cream"}`}>
                   Explore area page
                   <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
                 </div>
@@ -64,7 +64,7 @@ export function ServiceAreasSection({
 
         {!compact && (
           <AnimatedSection delay={0.32} className="mt-8">
-            <p className={`max-w-3xl text-sm leading-relaxed sm:text-base ${light ? "text-cream/70" : "text-navy/65"}`}>
+            <p className={`max-w-3xl text-sm leading-relaxed sm:text-base ${light ? "text-cream/70" : "text-cream/70"}`}>
               Primary searches we built this cluster for include cabinet installation
               Seattle, cabinet installation Bellevue, cabinet installation Kirkland,
               cabinet installation Clyde Hill, IKEA kitchen installation Bellevue,

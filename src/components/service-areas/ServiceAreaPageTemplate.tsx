@@ -9,16 +9,51 @@ import { buttonVariants } from "@/lib/button-variants";
 import { cn } from "@/lib/utils";
 
 const SERVICE_LINE_ITEMS = [
-  "Cabinet installation",
-  "Kitchen cabinet installation",
-  "IKEA kitchen installation",
-  "European frameless cabinet installation",
-  "Custom cabinet installation",
-  "Cabinet replacement",
-  "Cabinet assembly",
-  "Built-in cabinets",
-  "Bathroom vanity cabinet installation",
-  "Kitchen remodeling finish work",
+  {
+    title: "Cabinet Installation",
+    imageSrc: "/images/services/cabinet-installation.jpg",
+    imageAlt: "Cabinet installation by NW Premium Design",
+  },
+  {
+    title: "Kitchen Cabinet Installation",
+    imageSrc: "/images/yelp/yelp-60.jpg",
+    imageAlt: "Kitchen cabinet installation by NW Premium Design",
+  },
+  {
+    title: "IKEA Kitchen Installation",
+    imageSrc: "/images/yelp/yelp-48.jpg",
+    imageAlt: "IKEA kitchen installation by NW Premium Design",
+  },
+  {
+    title: "European Frameless Cabinet Installation",
+    imageSrc: "/images/yelp/yelp-120.jpg",
+    imageAlt: "European frameless cabinet installation by NW Premium Design",
+  },
+  {
+    title: "Custom Cabinet Installation",
+    imageSrc: "/images/yelp/yelp-95.jpg",
+    imageAlt: "Custom cabinet installation by NW Premium Design",
+  },
+  {
+    title: "Cabinet Replacement",
+    imageSrc: "/images/yelp/yelp-121.jpg",
+    imageAlt: "Cabinet replacement project by NW Premium Design",
+  },
+  {
+    title: "Built-In Cabinets",
+    imageSrc: "/images/yelp/yelp-141.jpg",
+    imageAlt: "Built-in cabinet installation by NW Premium Design",
+  },
+  {
+    title: "Bathroom Vanity Cabinet Installation",
+    imageSrc: "/images/services/bathroom-remodel-4440.jpg",
+    imageAlt: "Bathroom vanity cabinet installation by NW Premium Design",
+  },
+  {
+    title: "Kitchen Remodeling Finish Work",
+    imageSrc: "/images/services/kitchen-remodel.jpg",
+    imageAlt: "Kitchen remodeling finish work by NW Premium Design",
+  },
 ] as const;
 
 interface ServiceAreaPageTemplateProps {
@@ -69,7 +104,7 @@ export function ServiceAreaPageTemplate({
                 {page.intro.map((paragraph) => (
                   <p
                     key={paragraph}
-                    className="mt-4 text-base leading-relaxed text-cream/78 sm:text-lg"
+                    className="mt-4 text-base leading-relaxed text-cream/75 sm:text-lg"
                   >
                     {paragraph}
                   </p>
@@ -120,10 +155,24 @@ export function ServiceAreaPageTemplate({
                 <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
                   {SERVICE_LINE_ITEMS.map((item) => (
                     <div
-                      key={item}
-                      className="rounded-2xl border border-navy/10 bg-white px-5 py-4 shadow-[0_2px_14px_rgba(15,23,42,0.05)]"
+                      key={item.title}
+                      className="group relative overflow-hidden rounded-[24px] border border-white/10 bg-navy shadow-[0_10px_26px_rgba(0,0,0,0.2)]"
                     >
-                      <p className="text-sm font-medium text-navy/82">{item}</p>
+                      <div className="relative h-44">
+                        <Image
+                          src={item.imageSrc}
+                          alt={item.imageAlt}
+                          fill
+                          sizes="(max-width: 768px) 100vw, 33vw"
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/20 to-black/78" />
+                        <div className="absolute inset-x-0 bottom-0 p-5">
+                          <p className="font-serif text-xl font-semibold leading-tight text-cream">
+                            {item.title}
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -132,14 +181,14 @@ export function ServiceAreaPageTemplate({
               {page.sections.map((section, index) => (
                 <AnimatedSection key={section.title} delay={index * 0.06}>
                   <div className="rounded-[28px] border border-navy/10 bg-white p-6 shadow-[0_2px_20px_rgba(15,23,42,0.05)] sm:p-8">
-                    <h2 className="font-serif text-2xl font-semibold text-navy sm:text-3xl">
+                    <h2 className="font-serif text-2xl font-semibold text-cream sm:text-3xl">
                       {section.title}
                     </h2>
                     <div className="mt-4 space-y-4">
                       {section.paragraphs.map((paragraph) => (
                         <p
                           key={paragraph}
-                          className="text-base leading-relaxed text-navy/72"
+                          className="text-base leading-relaxed text-cream/70"
                         >
                           {paragraph}
                         </p>
@@ -158,7 +207,7 @@ export function ServiceAreaPageTemplate({
                     {page.nearbyAreas.map((area) => (
                       <div
                         key={area}
-                        className="rounded-full border border-white/14 bg-white/8 px-4 py-2 text-sm text-cream/82"
+                        className="rounded-full border border-white/14 bg-white/8 px-4 py-2 text-sm text-cream/80"
                       >
                         {area}
                       </div>
@@ -169,7 +218,7 @@ export function ServiceAreaPageTemplate({
 
               <AnimatedSection>
                 <div className="rounded-[28px] border border-navy/10 bg-white p-6 shadow-[0_2px_20px_rgba(15,23,42,0.05)] sm:p-8">
-                  <h2 className="font-serif text-2xl font-semibold text-navy sm:text-3xl">
+                  <h2 className="font-serif text-2xl font-semibold text-cream sm:text-3xl">
                     Why Homeowners Choose NW Premium Design
                   </h2>
                   <div className="mt-5 grid gap-4 md:grid-cols-2">
@@ -178,8 +227,8 @@ export function ServiceAreaPageTemplate({
                         key={item}
                         className="flex gap-3 rounded-2xl border border-navy/8 bg-cream-dark px-4 py-4"
                       >
-                        <CheckCircle className="mt-0.5 size-4 shrink-0 text-navy" />
-                        <p className="text-sm leading-relaxed text-navy/78">{item}</p>
+                        <CheckCircle className="mt-0.5 size-4 shrink-0 text-cream" />
+                        <p className="text-sm leading-relaxed text-cream/75">{item}</p>
                       </div>
                     ))}
                   </div>
@@ -188,10 +237,10 @@ export function ServiceAreaPageTemplate({
 
               <AnimatedSection>
                 <div className="rounded-[28px] border border-navy/10 bg-white p-6 shadow-[0_2px_20px_rgba(15,23,42,0.05)] sm:p-8">
-                  <h2 className="font-serif text-2xl font-semibold text-navy sm:text-3xl">
+                  <h2 className="font-serif text-2xl font-semibold text-cream sm:text-3xl">
                     {page.recentWorkTitle}
                   </h2>
-                  <p className="mt-4 max-w-3xl text-base leading-relaxed text-navy/72">
+                  <p className="mt-4 max-w-3xl text-base leading-relaxed text-cream/70">
                     {page.recentWorkBody}
                   </p>
                   <div className="mt-6 grid gap-5 lg:grid-cols-2">
@@ -210,7 +259,7 @@ export function ServiceAreaPageTemplate({
                           />
                         </div>
                         <div className="p-4">
-                          <p className="text-sm leading-relaxed text-navy/70">
+                          <p className="text-sm leading-relaxed text-cream/70">
                             {image.caption}
                           </p>
                         </div>
@@ -234,7 +283,7 @@ export function ServiceAreaPageTemplate({
                         <h3 className="text-base font-semibold text-cream">
                           {faq.question}
                         </h3>
-                        <p className="mt-2 text-sm leading-relaxed text-cream/74">
+                        <p className="mt-2 text-sm leading-relaxed text-cream/75">
                           {faq.answer}
                         </p>
                       </div>
@@ -253,7 +302,7 @@ export function ServiceAreaPageTemplate({
                   <h2 className="mt-3 font-serif text-2xl font-semibold text-cream">
                     Text Alex your plans, photos, or measurements
                   </h2>
-                  <p className="mt-3 text-sm leading-relaxed text-cream/74">
+                  <p className="mt-3 text-sm leading-relaxed text-cream/75">
                     The fastest way to price cabinet installation in {page.city} is
                     to text your project details directly to Alex.
                   </p>
@@ -289,7 +338,7 @@ export function ServiceAreaPageTemplate({
                 </div>
 
                 <div className="rounded-[28px] border border-navy/10 bg-white p-6 shadow-[0_2px_18px_rgba(15,23,42,0.05)]">
-                  <h2 className="font-serif text-xl font-semibold text-navy">
+                  <h2 className="font-serif text-xl font-semibold text-cream">
                     Explore More Service Areas
                   </h2>
                   <div className="mt-4 grid gap-3">
@@ -297,7 +346,7 @@ export function ServiceAreaPageTemplate({
                       <Link
                         key={link.href}
                         href={link.href}
-                        className="flex items-center justify-between rounded-2xl border border-navy/8 bg-cream-dark px-4 py-3 text-sm font-medium text-navy/82 transition-colors hover:border-navy/16 hover:bg-white"
+                        className="flex items-center justify-between rounded-2xl border border-navy/8 bg-cream-dark px-4 py-3 text-sm font-medium text-cream/80 transition-colors hover:border-navy/15 hover:bg-white"
                       >
                         <span>{link.label}</span>
                         <ArrowRight className="size-4" />
@@ -307,14 +356,14 @@ export function ServiceAreaPageTemplate({
                 </div>
 
                 <div className="rounded-[28px] border border-navy/10 bg-white p-6 shadow-[0_2px_18px_rgba(15,23,42,0.05)]">
-                  <h2 className="font-serif text-xl font-semibold text-navy">
+                  <h2 className="font-serif text-xl font-semibold text-cream">
                     Serving {page.city} and Nearby Neighborhoods
                   </h2>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {page.nearbyAreas.map((area) => (
                       <span
                         key={area}
-                        className="inline-flex items-center gap-2 rounded-full bg-cream-dark px-3 py-2 text-xs font-medium text-navy/74"
+                        className="inline-flex items-center gap-2 rounded-full bg-cream-dark px-3 py-2 text-xs font-medium text-cream/75"
                       >
                         <MapPin className="size-3" />
                         {area}
@@ -337,7 +386,7 @@ export function ServiceAreaPageTemplate({
             <h2 className="mt-3 font-serif text-3xl font-semibold text-cream text-balance sm:text-4xl">
               Ready to talk through your {page.city} cabinet project?
             </h2>
-            <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-cream/74 sm:text-lg">
+            <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-cream/75 sm:text-lg">
               Text your cabinet plans, photos, measurements, or project details
               for a fast estimate. Alex can review your scope and let you know
               the best next step for cabinet installation, cabinet replacement,

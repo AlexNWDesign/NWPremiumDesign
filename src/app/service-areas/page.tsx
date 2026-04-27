@@ -82,7 +82,7 @@ export default function ServiceAreasPage() {
             {serviceAreaHub.intro.map((paragraph) => (
               <p
                 key={paragraph}
-                className="mt-4 text-base leading-relaxed text-cream/76 sm:text-lg"
+                className="mt-4 text-base leading-relaxed text-cream/75 sm:text-lg"
               >
                 {paragraph}
               </p>
@@ -117,7 +117,7 @@ export default function ServiceAreasPage() {
         <div className="container-site space-y-10">
           <AnimatedSection>
             <div className="rounded-[28px] border border-navy/10 bg-white p-6 shadow-[0_2px_20px_rgba(15,23,42,0.05)] sm:p-8">
-              <h2 className="font-serif text-2xl font-semibold text-navy sm:text-3xl">
+              <h2 className="font-serif text-2xl font-semibold text-cream sm:text-3xl">
                 Primary Cabinet Installation Areas
               </h2>
               <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
@@ -125,21 +125,21 @@ export default function ServiceAreasPage() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="group rounded-[24px] border border-navy/10 bg-cream-dark p-5 transition-all hover:-translate-y-1 hover:border-navy/16 hover:bg-white"
+                    className="group rounded-[24px] border border-navy/10 bg-cream-dark p-5 transition-all hover:-translate-y-1 hover:border-navy/15 hover:bg-white"
                   >
                     <div className="flex items-center gap-3">
                       <div className="flex size-10 items-center justify-center rounded-full bg-navy/6">
-                        <MapPin className="size-4 text-navy" />
+                        <MapPin className="size-4 text-cream" />
                       </div>
-                      <h3 className="font-serif text-xl font-semibold text-navy">
+                      <h3 className="font-serif text-xl font-semibold text-cream">
                         {link.shortLabel}
                       </h3>
                     </div>
-                    <p className="mt-3 text-sm leading-relaxed text-navy/68">
+                    <p className="mt-3 text-sm leading-relaxed text-cream/70">
                       Cabinet installation, kitchen cabinet installation, IKEA kitchen
                       installation, and finish-focused cabinet replacement work.
                     </p>
-                    <div className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-navy">
+                    <div className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-cream">
                       View area page
                       <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
                     </div>
@@ -152,14 +152,14 @@ export default function ServiceAreasPage() {
           <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
             <AnimatedSection>
               <div className="rounded-[28px] border border-navy/10 bg-white p-6 shadow-[0_2px_20px_rgba(15,23,42,0.05)] sm:p-8">
-                <h2 className="font-serif text-2xl font-semibold text-navy sm:text-3xl">
+                <h2 className="font-serif text-2xl font-semibold text-cream sm:text-3xl">
                   Other Areas We Serve
                 </h2>
                 <div className="mt-5 flex flex-wrap gap-3">
                   {serviceAreaHub.otherAreas.map((area) => (
                     <span
                       key={area}
-                      className="rounded-full bg-cream-dark px-4 py-2 text-sm font-medium text-navy/74"
+                      className="rounded-full bg-cream-dark px-4 py-2 text-sm font-medium text-cream/75"
                     >
                       {area}
                     </span>
@@ -192,7 +192,7 @@ export default function ServiceAreasPage() {
               <h2 className="font-serif text-3xl font-semibold text-cream sm:text-4xl">
                 Not Sure If We Serve Your Area?
               </h2>
-              <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-cream/76 sm:text-lg">
+              <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-cream/75 sm:text-lg">
                 Text Alex your city, photos, plans, or measurements. If your
                 project is in Seattle, the Eastside, South King County, or nearby
                 Puget Sound communities, NW Premium Design LLC can usually confirm
