@@ -89,7 +89,7 @@ export default function ServicesPage() {
         ))}
       </div>
 
-      <ServiceAreasSection compact />
+      <ServiceAreasSection />
       <ContactCTA />
     </>
   );

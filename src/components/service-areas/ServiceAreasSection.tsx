@@ -6,12 +6,10 @@ import { SectionHeader } from "@/components/shared/SectionHeader";
 
 interface ServiceAreasSectionProps {
   light?: boolean;
-  compact?: boolean;
 }
 
 export function ServiceAreasSection({
   light = false,
-  compact = false,
 }: ServiceAreasSectionProps) {
   return (
     <section className={light ? "section-padding bg-navy" : "section-padding bg-cream-dark"}>
@@ -61,17 +59,6 @@ export function ServiceAreasSection({
             </AnimatedSection>
           ))}
         </div>
-
-        {!compact && (
-          <AnimatedSection delay={0.32} className="mt-8">
-            <p className={`max-w-3xl text-sm leading-relaxed sm:text-base ${light ? "text-cream/70" : "text-cream/70"}`}>
-              Primary searches we built this cluster for include cabinet installation
-              Seattle, cabinet installation Bellevue, cabinet installation Kirkland,
-              cabinet installation Clyde Hill, IKEA kitchen installation Bellevue,
-              custom cabinet installation Kirkland, and cabinet installation Eastside WA.
-            </p>
-          </AnimatedSection>
-        )}
       </div>
     </section>
   );
