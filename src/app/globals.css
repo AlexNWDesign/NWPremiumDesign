@@ -164,6 +164,12 @@
   .section-padding {
     @apply py-16 sm:py-20 lg:py-24;
   }
+  .page-hero {
+    @apply relative overflow-hidden bg-navy pt-32 pb-16 sm:pt-36 sm:pb-20;
+  }
+  .page-hero-container {
+    @apply relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
 
   .bg-white {
     background-color: oklch(0.22 0.008 255) !important;

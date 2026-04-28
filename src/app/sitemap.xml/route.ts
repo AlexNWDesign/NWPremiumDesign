@@ -1,7 +1,9 @@
 import { serviceAreaPages } from "@/data/serviceAreas";
+import { services } from "@/data/services";
 
 const CORE_SITEMAP_ENTRIES = [
   { loc: "https://nwpremiumdesign.com/", priority: "1.0" },
+  { loc: "https://nwpremiumdesign.com/about", priority: "0.8" },
   { loc: "https://nwpremiumdesign.com/services", priority: "0.9" },
   { loc: "https://nwpremiumdesign.com/gallery", priority: "0.8" },
   { loc: "https://nwpremiumdesign.com/contact", priority: "0.8" },
@@ -10,6 +12,10 @@ const CORE_SITEMAP_ENTRIES = [
 
 const SITEMAP_ENTRIES = [
   ...CORE_SITEMAP_ENTRIES,
+  ...services.map((service) => ({
+    loc: `https://nwpremiumdesign.com/services/${service.slug}`,
+    priority: "0.8",
+  })),
   ...serviceAreaPages.map((page) => ({
     loc: `https://nwpremiumdesign.com${page.href}`,
     priority: "0.9",

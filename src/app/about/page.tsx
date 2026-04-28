@@ -72,7 +72,7 @@ export default function AboutPage() {
         }}
       />
       {/* Hero */}
-      <section className="relative overflow-hidden bg-navy pt-28 pb-16 sm:pt-36 sm:pb-20">
+      <section className="page-hero">
         <Image
           src="/images/hero/hero-kitchen.jpg"
           alt=""
@@ -86,7 +86,7 @@ export default function AboutPage() {
         <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent" />
         <div className="pointer-events-none absolute -left-24 top-8 size-72 rounded-full bg-black/20 blur-3xl" />
         <div className="pointer-events-none absolute right-0 top-20 size-80 rounded-full bg-white/[0.04] blur-3xl" />
-        <div className="container-site relative z-10">
+        <div className="page-hero-container z-10">
           <div className="grid items-center gap-10 lg:grid-cols-5 lg:gap-16">
             {/* Text — 3 cols */}
             <AnimatedSection direction="left" className="lg:col-span-3 space-y-5">

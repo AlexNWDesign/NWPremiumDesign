@@ -67,8 +67,8 @@ export default async function ServicePage({
       />
 
       {/* Hero */}
-      <section className="relative pt-16 overflow-hidden">
-        <div className="relative h-[420px] sm:h-[520px]">
+      <section className="page-hero">
+        <div className="absolute inset-0">
           <Image
             src={service.imageSrc}
             alt={service.imageAlt}
@@ -77,34 +77,31 @@ export default async function ServicePage({
             sizes="100vw"
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-navy/80 via-navy/60 to-navy/50" />
-          <div className="absolute inset-0 flex items-end">
-            <div className="container-site pb-12">
-              {/* Breadcrumb */}
-              <nav className="mb-4 flex items-center gap-1 text-xs text-cream/60">
-                <Link href="/" className="hover:text-cream transition-colors">
-                  Home
-                </Link>
-                <ChevronRight className="size-3" />
-                <Link
-                  href="/services"
-                  className="hover:text-cream transition-colors"
-                >
-                  Services
-                </Link>
-                <ChevronRight className="size-3" />
-                <span className="text-cream/80">{service.title}</span>
-              </nav>
-              <AnimatedSection>
-                <h1 className="font-serif text-4xl font-semibold text-cream sm:text-5xl">
-                  {service.title}
-                </h1>
-                <p className="mt-3 max-w-lg text-base italic text-cream/75">
-                  {service.tagline}
-                </p>
-              </AnimatedSection>
-            </div>
-          </div>
+          <div className="absolute inset-0 bg-gradient-to-b from-navy/82 via-navy/68 to-navy/58" />
+        </div>
+        <div className="page-hero-container">
+          <nav className="mb-4 flex items-center gap-1 text-xs text-cream/60">
+            <Link href="/" className="hover:text-cream transition-colors">
+              Home
+            </Link>
+            <ChevronRight className="size-3" />
+            <Link
+              href="/services"
+              className="hover:text-cream transition-colors"
+            >
+              Services
+            </Link>
+            <ChevronRight className="size-3" />
+            <span className="text-cream/80">{service.title}</span>
+          </nav>
+          <AnimatedSection className="max-w-4xl">
+            <h1 className="font-serif text-4xl font-semibold text-cream text-balance sm:text-5xl lg:text-6xl">
+              {service.title}
+            </h1>
+            <p className="mt-3 max-w-2xl text-base italic leading-relaxed text-cream/75 sm:text-lg">
+              {service.tagline}
+            </p>
+          </AnimatedSection>
         </div>
       </section>
 

@@ -57,7 +57,7 @@ export default function ServiceAreasPage() {
         }}
       />
 
-      <section className="relative overflow-hidden bg-navy pt-32 pb-16 sm:pt-36 sm:pb-20">
+      <section className="page-hero">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/images/services/cabinet-installation.jpg')" }}
@@ -65,7 +65,7 @@ export default function ServiceAreasPage() {
         <div className="absolute inset-0 bg-black/74" />
         <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent" />
 
-        <div className="container-site relative">
+        <div className="page-hero-container">
           <nav className="mb-5 flex flex-wrap items-center gap-1 text-xs text-cream/60">
             <Link href="/" className="hover:text-cream transition-colors">
               Home

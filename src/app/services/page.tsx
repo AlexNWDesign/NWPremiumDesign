@@ -44,7 +44,7 @@ export default function ServicesPage() {
         }}
       />
       {/* Page hero */}
-      <section className="relative overflow-hidden bg-navy pt-32 pb-16 sm:pt-36 sm:pb-20">
+      <section className="page-hero">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -57,7 +57,7 @@ export default function ServicesPage() {
         <div className="pointer-events-none absolute -left-24 top-10 size-72 rounded-full bg-black/30 blur-3xl" />
         <div className="pointer-events-none absolute right-0 top-24 size-80 rounded-full bg-amber-300/8 blur-3xl" />
 
-        <div className="container-site relative">
+        <div className="page-hero-container">
           <AnimatedSection className="max-w-2xl" once={false}>
             <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-cream/55">
               What We Offer

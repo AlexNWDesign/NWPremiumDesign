@@ -67,8 +67,8 @@ export function ServiceAreaPageTemplate({
 
   return (
     <>
-      <section className="relative pt-16 overflow-hidden">
-        <div className="relative h-[460px] sm:h-[560px]">
+      <section className="page-hero">
+        <div className="absolute inset-0">
           <Image
             src={page.heroImageSrc}
             alt={page.heroImageAlt}
@@ -78,72 +78,70 @@ export function ServiceAreaPageTemplate({
             className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-navy/88 via-navy/72 to-navy/62" />
-          <div className="absolute inset-0 flex items-end">
-            <div className="container-site pb-12">
-              <nav className="mb-5 flex flex-wrap items-center gap-1 text-xs text-cream/60">
-                <Link href="/" className="hover:text-cream transition-colors">
-                  Home
-                </Link>
-                <ChevronRight className="size-3" />
-                <Link href="/service-areas" className="hover:text-cream transition-colors">
-                  Service Areas
-                </Link>
-                <ChevronRight className="size-3" />
-                <span className="text-cream/80">{page.city}</span>
-              </nav>
+        </div>
+        <div className="page-hero-container">
+          <nav className="mb-5 flex flex-wrap items-center gap-1 text-xs text-cream/60">
+            <Link href="/" className="hover:text-cream transition-colors">
+              Home
+            </Link>
+            <ChevronRight className="size-3" />
+            <Link href="/service-areas" className="hover:text-cream transition-colors">
+              Service Areas
+            </Link>
+            <ChevronRight className="size-3" />
+            <span className="text-cream/80">{page.city}</span>
+          </nav>
 
-              <AnimatedSection className="max-w-4xl">
-                <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-cream/55">
-                  Local Cabinet Installation
-                </p>
-                <h1 className="font-serif text-4xl font-semibold text-cream text-balance sm:text-5xl lg:text-6xl">
-                  {page.heading}
-                </h1>
-              </AnimatedSection>
-              <AnimatedSection delay={0.08} className="max-w-3xl">
-                {page.intro.map((paragraph) => (
-                  <p
-                    key={paragraph}
-                    className="mt-4 text-base leading-relaxed text-cream/75 sm:text-lg"
-                  >
-                    {paragraph}
-                  </p>
-                ))}
-              </AnimatedSection>
-              <AnimatedSection delay={0.16} className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <a
-                  href={`tel:${BUSINESS.phone}`}
-                  className={cn(
-                    buttonVariants({ size: "lg" }),
-                    "w-full gap-2 bg-cream text-navy hover:bg-cream-dark sm:w-auto"
-                  )}
-                >
-                  <Phone className="size-4" />
-                  Call Alex
-                </a>
-                <a
-                  href={`sms:${BUSINESS.phone}`}
-                  className={cn(
-                    buttonVariants({ size: "lg", variant: "outline" }),
-                    "w-full gap-2 border-cream/35 bg-transparent text-cream hover:bg-cream/10 hover:text-cream sm:w-auto"
-                  )}
-                >
-                  Text for Estimate
-                  <ArrowRight className="size-4" />
-                </a>
-                <Link
-                  href="/gallery"
-                  className={cn(
-                    buttonVariants({ size: "lg", variant: "outline" }),
-                    "w-full gap-2 border-white/18 bg-white/8 text-cream hover:bg-white/12 hover:text-cream sm:w-auto"
-                  )}
-                >
-                  View Gallery
-                  <ArrowRight className="size-4" />
-                </Link>
-              </AnimatedSection>
-            </div>
-          </div>
+          <AnimatedSection className="max-w-4xl">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-cream/55">
+              Local Cabinet Installation
+            </p>
+            <h1 className="font-serif text-4xl font-semibold text-cream text-balance sm:text-5xl lg:text-6xl">
+              {page.heading}
+            </h1>
+          </AnimatedSection>
+          <AnimatedSection delay={0.08} className="max-w-3xl">
+            {page.intro.map((paragraph) => (
+              <p
+                key={paragraph}
+                className="mt-4 text-base leading-relaxed text-cream/75 sm:text-lg"
+              >
+                {paragraph}
+              </p>
+            ))}
+          </AnimatedSection>
+          <AnimatedSection delay={0.16} className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a
+              href={`tel:${BUSINESS.phone}`}
+              className={cn(
+                buttonVariants({ size: "lg" }),
+                "w-full gap-2 bg-cream text-navy hover:bg-cream-dark sm:w-auto"
+              )}
+            >
+              <Phone className="size-4" />
+              Call Alex
+            </a>
+            <a
+              href={`sms:${BUSINESS.phone}`}
+              className={cn(
+                buttonVariants({ size: "lg", variant: "outline" }),
+                "w-full gap-2 border-cream/35 bg-transparent text-cream hover:bg-cream/10 hover:text-cream sm:w-auto"
+              )}
+            >
+              Text for Estimate
+              <ArrowRight className="size-4" />
+            </a>
+            <Link
+              href="/gallery"
+              className={cn(
+                buttonVariants({ size: "lg", variant: "outline" }),
+                "w-full gap-2 border-white/18 bg-white/8 text-cream hover:bg-white/12 hover:text-cream sm:w-auto"
+              )}
+            >
+              View Gallery
+              <ArrowRight className="size-4" />
+            </Link>
+          </AnimatedSection>
         </div>
       </section>
 
