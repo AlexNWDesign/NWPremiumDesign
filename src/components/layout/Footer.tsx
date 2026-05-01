@@ -39,7 +39,7 @@ export function Footer() {
             <div className="mb-4 flex items-center gap-3">
               <div className="relative h-[84px] w-[140px] shrink-0 overflow-hidden rounded-2xl bg-white/[0.06] p-2 ring-1 ring-white/10">
                 <Image
-                  src="/New%20Logo1.png"
+                  src={BUSINESS.logoPath}
                   alt="NW Premium Design LLC logo"
                   fill
                   sizes="140px"

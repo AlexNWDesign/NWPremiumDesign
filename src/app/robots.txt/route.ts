@@ -1,6 +1,12 @@
 const ROBOTS_TXT = `User-agent: *
 Allow: /
 
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
 Sitemap: https://nwpremiumdesign.com/sitemap.xml
 `;
 

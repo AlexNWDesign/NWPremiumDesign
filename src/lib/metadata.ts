@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/constants";
 
+const FAVICON_VERSION = "v=2";
+
 export const defaultMetadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   applicationName: "NW Premium Design LLC",
@@ -62,13 +64,33 @@ export const defaultMetadata: Metadata = {
   creator: "NW Premium Design LLC",
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+      { url: `/favicon.ico?${FAVICON_VERSION}` },
+      {
+        url: `/favicon-48x48.png?${FAVICON_VERSION}`,
+        sizes: "48x48",
+        type: "image/png",
+      },
+      {
+        url: `/favicon-96x96.png?${FAVICON_VERSION}`,
+        sizes: "96x96",
+        type: "image/png",
+      },
+      {
+        url: `/favicon-192x192.png?${FAVICON_VERSION}`,
+        sizes: "192x192",
+        type: "image/png",
+      },
     ],
-    shortcut: ["/favicon.ico"],
-    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: `/favicon.ico?${FAVICON_VERSION}`,
+    apple: [
+      {
+        url: `/apple-touch-icon.png?${FAVICON_VERSION}`,
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
   },
-  manifest: "/manifest.webmanifest",
+  manifest: `/site.webmanifest?${FAVICON_VERSION}`,
   robots: {
     index: true,
     follow: true,
@@ -112,9 +134,17 @@ export function buildPageMetadata(overrides: Partial<Metadata>): Metadata {
   return {
     ...defaultMetadata,
     ...overrides,
+    alternates: {
+      ...defaultMetadata.alternates,
+      ...(overrides.alternates ?? {}),
+    },
     openGraph: {
       ...defaultMetadata.openGraph,
       ...(overrides.openGraph ?? {}),
+    },
+    twitter: {
+      ...defaultMetadata.twitter,
+      ...(overrides.twitter ?? {}),
     },
   };
 }

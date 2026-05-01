@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { Phone } from "lucide-react";
 import { MobileMenu } from "@/components/layout/MobileMenu";
 import { buttonVariants } from "@/components/ui/button";
-import { NAV_LINKS } from "@/lib/constants";
+import { BUSINESS, NAV_LINKS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
 export function Header() {
@@ -24,7 +24,7 @@ export function Header() {
         <Link href="/" className="flex shrink-0 items-center">
           <div className="relative h-16 w-[108px] overflow-hidden rounded-2xl bg-white/[0.06] p-1.5 shadow-[0_12px_30px_rgba(0,0,0,0.28)] ring-1 ring-white/16 sm:h-[72px] sm:w-[124px]">
             <Image
-              src="/New%20Logo1.png"
+              src={BUSINESS.logoPath}
               alt="NW Premium Design LLC logo"
               fill
               sizes="(max-width: 640px) 108px, 124px"
